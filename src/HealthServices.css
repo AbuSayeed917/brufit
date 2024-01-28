@@ -1,0 +1,46 @@
+/* HealthServices.css */
+#health-services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+.input-container {
+    text-align: center;
+}
+  
+.label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-right: 8px; /* Add margin to the right */
+    
+}
+  
+.input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+  
+.button {
+    background-color: #4caf50;
+    color: white;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-top: 13px;
+    margin-left: 168px;
+}
+  
+.error {
+    color: red;
+    margin-bottom: 16px;
+}
+  
+.hospitals-list {
+    margin-top: 16px;
+}
+  
+.hospitals-list li {
+    margin-bottom: 8px;
+}

@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #0073a8; /* Updated NHS Blue */
+    --secondary-color: #ffffff; /* White text color */
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --brand-font-size: 36px; /* Larger font for the header */
+    --menu-font-size: 14px; /* Slightly smaller font size for the menu items */
+    --menu-background-color: #0073a8; /* NHS Blue background color */
+    --menu-hover-color: #ffffff; /* White text color on hover */
+    --menu-hover-background-color: #004c7f; /* Darker blue background on hover */
+    --brand-margin: 0;
+    --padding-horizontal: 30px; /* Increased horizontal padding for the header */
+    --padding-vertical: 20px;
+    --gap: 15px;
+    --border-radius: 10px; /* Slightly larger border radius for a softer look */
+    --custom-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Health-oriented sans-serif font */
+    --animation-duration: 0.3s; /* Animation duration */
+}
+
+body {
+    font-family: var(--custom-font);
+    margin: 0;
+}
+
+.navbar {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    box-shadow: 0px 8px 12px var(--box-shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    transition: background-color var(--animation-duration) ease-in-out;
+}
+
+.navbar:hover {
+    background-color: var(--menu-hover-background-color);
+}
+
+.brand h1 {
+    margin: var(--brand-margin);
+    font-size: var(--brand-font-size);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    transition: color var(--animation-duration) ease-in-out;
+    margin-right: 10px;
+}
+
+.navbar:hover .brand h1 {
+    color: var(--menu-hover-color);
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--menu-font-size);
+    font-weight: bold;
+    padding: 10px 15px; /* Reduced padding */
+    border-radius: var(--border-radius);
+    transition: color var(--animation-duration) ease-in-out, background-color var(--animation-duration) ease-in-out;
+    background-color: var(--menu-background-color);
+}
+
+.menu-list a:hover {
+    color: var(--menu-hover-color);
+    background-color: var(--menu-hover-background-color);
+}
